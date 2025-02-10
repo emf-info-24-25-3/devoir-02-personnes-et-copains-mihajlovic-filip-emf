@@ -30,27 +30,31 @@ public class Application {
                 personnes[10] = personne11;
                 personnes[11] = personne12;
                 personne1.ajouterUnAmi(personne11);
-                personne1.toString();
+                personne1.afficherAmis();
                 personne1.ajouterUnAmi(personne12);
-                personne1.toString();
+                personne1.afficherAmis();
                 personne1.ajouterUnAmi(personne3);
-                personne1.toString();
+                personne1.afficherAmis();
                 personne1.ajouterUnAmi(personne4);
-                personne1.toString();
+                personne1.afficherAmis();
                 personne1.ajouterUnAmi(personne5);
-                personne1.toString();
+                personne1.afficherAmis();
                 personne1.ajouterUnAmi(personne6);
-                personne1.toString();
+                personne1.afficherAmis();
                 personne1.ajouterUnAmi(personne7);
-                personne1.toString();
+                personne1.afficherAmis();
                 personne1.ajouterUnAmi(personne8);
-                personne1.toString();
+                personne1.afficherAmis();
                 personne1.ajouterUnAmi(personne9);
-                personne1.toString();
+                personne1.afficherAmis();
                 personne1.ajouterUnAmi(personne10);
-                personne1.toString();
+                personne1.afficherAmis();
+                personne1.ajouterUnAmi(personne2);
+                personne1.afficherAmis();
+                personne1.ajouterUnAmi(personne1);
+                personne1.afficherAmis();
                 personne1.supprimerUnAmi(personne11);
-                personne1.toString();
+                personne1.afficherAmis();
         }
 
 }
