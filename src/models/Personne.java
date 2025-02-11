@@ -3,13 +3,14 @@ package models;
 public class Personne {
         public final static int MAX_COPINS = 10;
 
-        private String nom;
-        private String prenom;
+        private final String nom;
+        private final String prenom;
         private int nbAmis = 0;
-        private Personne[] amis = new Personne[MAX_COPINS];
+        private Personne[] amis;
         public Personne( String prenom, String nom) {
             this.prenom = prenom;
             this.nom = nom;
+            amis = new Personne[MAX_COPINS];
         }
 
         public String getNom() {
@@ -46,7 +47,7 @@ public class Personne {
 
         public void supprimerUnAmi(Personne amisSupprimer) {
                 for (int i = 0; i < amis.length; i++) {
-                        if (this.amis[i] != null && this.amis[i].equals(amisSupprimer)) {
+                        if (this.amis[i].equals(amisSupprimer)) {
                             this.amis[i] = null;
                             this.nbAmis--;
                             break;
@@ -60,7 +61,7 @@ public class Personne {
         }
 
         public void afficherAmis() {
-         System.out.println( this.prenom + " " + this.nom + "et ses amis : ");
+         System.out.println( this.prenom + " " + this.nom + " et ses amis : ");
             for (int i = 0; i < amis.length; i++) {
                 if (this.amis[i] != null) {
                     System.out.println(this.amis[i].toString());
